@@ -13,7 +13,7 @@ function addMore(){
         box.appendChild(li)
 
         let done= document.createElement('span');
-        done.innerHTML="<input type='submit' value='Done Task'>";
+        done.innerHTML="<input type='button' value='Done Task'>";
         li.appendChild(done);
 
         done.addEventListener('click', ()=>{
