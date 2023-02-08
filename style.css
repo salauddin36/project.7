@@ -120,7 +120,7 @@ input[value='Done Task']{
 @media screen and (max-width: 1200px) {
 
     .container{
-        width: 80%;
+        width: 90%;
         transition: 0.3s;
     }
     input[type="text"]{
@@ -128,4 +128,14 @@ input[value='Done Task']{
         height: 35px;
         outline: none;
     }
+}
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 99%;
+    }
+    .container ul li {
+        display: flex;
+    flex-direction: column;    
+}
 }
