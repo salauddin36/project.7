@@ -4,6 +4,10 @@ function getAndUpdate(){
     tit = document.getElementById('title').value;
     desc = document.getElementById('description').value;
 
+    if(!tit || !desc){
+      alert('please enter title and description');
+      return
+    }
     if(localStorage.getItem('itemsJson') == null){
       itemJsonArray = [];
       itemJsonArray.push([tit, desc]);
